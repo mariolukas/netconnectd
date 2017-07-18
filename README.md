@@ -1,3 +1,17 @@
+# netconnectd with debian package build system
+
+Original Source of netconnecd is located at: https://github.com/foosel/netconnectd
+
+## Build
+For building the debian package:
+
+    apt-get install build-essential python-setuptools debhelper cdbs dh-python
+    make deb
+
+For clean: 
+
+    make clean 
+
 # netconnectd
 
 netconnectd is a small daemon that ensures connectivity for single-PCB devices such as the Raspberry Pi where you don't 
