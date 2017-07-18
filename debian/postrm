@@ -1,0 +1,13 @@
+#!/bin/bash
+# postrm script for script for fabscanpi-server
+#
+# see: dh_installdeb(1)
+
+set -e
+
+SERVICE=fabscanpi-server
+PIDFILE=/var/run/$SERVICE.pid
+
+INIT_SCRIPT=/etc/init.d/$SERVICE
+
+exit 0

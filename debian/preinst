@@ -1,0 +1,23 @@
+#!/bin/bash
+# preinst script for script for fabscanpi-server
+#
+# see: dh_installdeb(1)
+
+set -e
+
+FABSCAN_USER=fabscan
+SERVICE=fabscanpi-server
+INIT_SCRIPT=/etc/init.d/$SERVICE
+SCANS_DIR=/var/scans
+
+#if ps ax | grep -v grep | grep -v $0 | grep $SERVICE > /dev/null
+#then
+#        if [ -f $INIT_SCRIPT ];then
+#            echo "$SERVICE is running shutting down..."
+#            $INIT_SCRIPT stop
+#        fi
+#fi
+
+#adduser --system $FABSCAN_USER --home $SCANS_DIR --no-create-home > /dev/null 2>&1 || true
+
+exit 0

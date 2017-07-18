@@ -1,0 +1,15 @@
+Source: netconnectd
+Section: net
+Priority: optional
+Maintainer: Mario Lukas (info@mariolukas.de) 
+Build-Depends: debhelper (>= 8.0.0), python (>= 2.7), dh-python, cdbs
+X-Python-Version: >=2.7
+Standards-Version: 3.9.3
+
+Package: netconnectd
+Architecture: all
+Homepage: https://github.com/foosel/netconnectd
+X-Python-Version: ${python:Versions}
+Depends: ${misc:Depends}, ${python:Depends}, hostapd, dnsmasq, logrotate, rfkill
+Description:
+ netconnectd is a small daemon that ensures connectivity for single-PCB devices such as the Raspberry Pi where you don't always have the means to setup your network interfaces by hand.
